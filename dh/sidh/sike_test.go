@@ -567,7 +567,7 @@ func ExampleKEM() {
 	}
 	fmt.Printf("%t\n", bytes.Equal(ssE, ssD))
 
-	// Bob performs encapsulation with Allices's public key
+	// Bob performs encapsulation with Allice's public key
 	err = kem.Encapsulate(ct, ssE, pubA)
 	if err != nil {
 		panic(err)
